@@ -1,0 +1,25 @@
+{
+  "info": { "id": "ses_fixture", "title": "Track growth", "directory": "/synthetic/sessionlore", "time": { "created": 1794445200000 } },
+  "messages": [
+    {
+      "info": { "id": "msg_u1", "sessionID": "ses_fixture", "role": "user", "time": { "created": 1794445200000 } },
+      "parts": [{ "id": "prt_u1", "type": "text", "text": "Keep the existing track and add one block per upgrade. 保留原有路軌。" }]
+    },
+    {
+      "info": { "id": "msg_a1", "sessionID": "ses_fixture", "role": "assistant", "time": { "created": 1794445201000 } },
+      "parts": [
+        { "id": "prt_r1", "type": "reasoning", "text": "Private reasoning must not enter the writing input." },
+        { "id": "prt_a1", "type": "text", "text": "I will preserve the track and add a block on each upgrade." },
+        { "id": "prt_t1", "type": "tool", "tool": "bash", "callID": "call_1", "state": { "status": "completed", "input": { "command": "npm test" }, "output": "3 tests passed" } }
+      ]
+    },
+    {
+      "info": { "id": "msg_u2", "sessionID": "ses_fixture", "role": "user", "time": { "created": 1794445202000 } },
+      "parts": [{ "id": "prt_s1", "type": "text", "synthetic": true, "text": "Injected context, not a human decision." }]
+    },
+    {
+      "info": { "id": "msg_a2", "sessionID": "ses_fixture", "role": "assistant", "time": { "created": 1794445203000 } },
+      "parts": [{ "id": "prt_a2", "type": "text", "text": "I updated track growth and reported three passing unit tests. Phone testing is still pending." }]
+    }
+  ]
+}

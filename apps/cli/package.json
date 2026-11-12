@@ -1,0 +1,28 @@
+{
+  "name": "@sessionlore/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "tsc -b --watch",
+    "clean": "tsc -b --clean"
+  },
+  "dependencies": {
+    "@sessionlore/core": "workspace:*",
+    "@sessionlore/experiments": "workspace:*"
+  },
+  "bin": {
+    "sessionlore": "./dist/index.js"
+  },
+  "license": "MIT"
+}

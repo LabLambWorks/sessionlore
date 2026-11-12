@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sessionlore",
+  "version": "0.1.0",
+  "description": "Write source-linked engineering dev logs in the agent's voice using the host model.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Sessionlore",
+        "shortDescription": "Your coding agent tells the development story",
+        "longDescription": "Read local coding sessions, write in the agent's first-person voice, review source evidence, and export Markdown or HTML using the host model.",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "defaultPrompt": [
+          "Write this project's dev log from your perspective using Sessionlore."
+        ]
+      }
+    }
+  }
+}

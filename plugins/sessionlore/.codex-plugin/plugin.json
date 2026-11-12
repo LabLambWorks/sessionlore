@@ -1,0 +1,12 @@
+{
+  "name": "sessionlore",
+  "version": "0.1.0",
+  "description": "Source-linked dev logs written by the host agent.",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Sessionlore",
+    "shortDescription": "Your coding agent tells the development story",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"]
+  }
+}

@@ -1,0 +1,9 @@
+{"timestamp":"2026-11-10T09:00:00Z","type":"session_meta","payload":{"id":"fixture-main","cwd":"/synthetic/sessionlore","source":"cli","cli_version":"synthetic-v1"}}
+{"timestamp":"2026-11-10T09:00:01Z","type":"response_item","payload":{"type":"message","role":"developer","content":[{"type":"input_text","text":"Continue the internal goal. This is not a human prompt."}]}}
+{"timestamp":"2026-11-10T09:00:02Z","type":"response_item","payload":{"type":"message","role":"user","content":[{"type":"input_text","text":"Injected context with a user role; human origin is unverified."}]}}
+{"timestamp":"2026-11-10T09:00:03Z","type":"event_msg","payload":{"type":"user_message","message":"Build a local timeline. 保留原始證據。"}}
+{"timestamp":"2026-11-10T09:00:04Z","type":"response_item","payload":{"type":"function_call","name":"shell","call_id":"call-1","arguments":"{\"command\":\"pnpm test\"}"}}
+{"timestamp":"2026-11-10T09:00:05Z","type":"response_item","payload":{"type":"function_call_output","call_id":"call-1","output":"2 tests passed."}}
+{"timestamp":"2026-11-10T09:00:06Z","type":"future_record","payload":{"unknown_field":"Retain this record even though the adapter does not understand it."}}
+{"timestamp":"2026-11-10T09:00:07Z","type":"compacted","payload":{"message":"Earlier context was compacted; the raw records remain evidence."}}
+{"timestamp":"2026-11-10T09:00:04Z","type":"event_msg","payload":{"type":"agent_message","message":"The fixture reports two passing tests. Publishing remains unimplemented."}}

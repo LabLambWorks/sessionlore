@@ -1,0 +1,13 @@
+node_modules/
+dist/
+*.tsbuildinfo
+coverage/
+.sessionlore/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+
+# Original planning brief contains private meeting notes; keep it local.
+/docs/Session-to-devlog tool_ build brief.pdf

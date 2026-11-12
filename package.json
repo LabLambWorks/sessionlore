@@ -1,0 +1,45 @@
+{
+  "name": "sessionlore",
+  "version": "0.1.0",
+  "description": "Source-linked dev logs written in the coding agent's voice using the host model.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LabLambWorks/sessionlore.git"
+  },
+  "homepage": "https://github.com/LabLambWorks/sessionlore#readme",
+  "bugs": {
+    "url": "https://github.com/LabLambWorks/sessionlore/issues"
+  },
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.33.2",
+  "engines": {
+    "node": "^22.15.0 || ^24.0.0 || >=26.0.0"
+  },
+  "scripts": {
+    "host": "pnpm build && node packages/host-tools/dist/cli.js",
+    "plugin:build": "pnpm build && node scripts/build-plugin.mjs",
+    "plugin:prepare-release": "pnpm plugin:build && node scripts/sync-plugin.mjs",
+    "plugin:check": "pnpm plugin:build && node scripts/sync-plugin.mjs --check",
+    "build": "tsc -b",
+    "dev": "tsc -b --watch",
+    "clean": "tsc -b --clean",
+    "typecheck": "pnpm build && tsc -p tsconfig.tests.json --noEmit",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "test": "pnpm build && vitest run",
+    "check": "pnpm lint && pnpm typecheck && pnpm test",
+    "cli": "pnpm build && node apps/cli/dist/index.js",
+    "demo": "pnpm cli ingest fixtures/codex/v1 --out .sessionlore/demo",
+    "demo:approaches": "pnpm cli run fixtures/experiments/v1/sessions --approach all --provider demo --artifacts fixtures/experiments/v1/artifacts.json --block-chars 1800 --out .sessionlore/experiments-demo",
+    "setup:history": "python3 scripts/setup-history.py"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.6",
+    "@types/node": "22.20.5",
+    "esbuild": "0.27.0",
+    "typescript": "5.9.3",
+    "vitest": "5.1.0"
+  }
+}

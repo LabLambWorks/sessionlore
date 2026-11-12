@@ -1,0 +1,11 @@
+{
+  "fixture_version": 1,
+  "origin": "Synthetic records based on the supplied design documents; no private transcripts.",
+  "tested_codex_versions": [],
+  "cases": {
+    "rollout-basic.jsonl": ["metadata", "hidden developer", "unverified user role", "human turn", "UTF-8 offsets", "tool call", "tool result", "unknown record", "compaction", "non-monotonic timestamps"],
+    "rollout-basic.jsonl.zst": ["zstd", "duplicate ingestion"],
+    "rollout-fork.jsonl": ["official fork metadata", "inherited history retained under distinct thread IDs"],
+    "rollout-malformed-tail.jsonl": ["incomplete final line retained"]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "fixture_version": 2,
+  "origin": "Synthetic content using record shapes inspected in the user-authorized current conversation. No private conversation text or paths are included.",
+  "observed_codex_versions": ["0.167.0-alpha.3.2"],
+  "scope": "Regression coverage for completed UserMessage, AgentMessage, FileChange and CommandExecution records and explicit message mirrors. This does not establish complete version compatibility.",
+  "cases": {"rollout-completed-items.jsonl": ["completed human messages", "duplicate message projection", "structured changes", "scoped validation output", "unverified internal user-role context", "unknown completion item"]}
+}

@@ -1,0 +1,9 @@
+packages:
+  - apps/*
+  - packages/*
+
+catalog:
+  zod: 4.6.7
+
+onlyBuiltDependencies:
+  - esbuild

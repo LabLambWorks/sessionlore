@@ -1,0 +1,13 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/contracts" },
+    { "path": "packages/adapter-codex" },
+    { "path": "packages/adapter-transcripts" },
+    { "path": "packages/evidence-store" },
+    { "path": "packages/core" },
+    { "path": "packages/experiments" },
+    { "path": "packages/host-tools" },
+    { "path": "apps/cli" }
+  ]
+}

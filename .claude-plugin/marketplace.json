@@ -1,0 +1,11 @@
+{
+  "name": "sessionlore-local",
+  "owner": { "name": "Sessionlore" },
+  "plugins": [
+    {
+      "name": "sessionlore",
+      "source": "./plugins/sessionlore",
+      "description": "Source-linked dev logs written by the host agent."
+    }
+  ]
+}

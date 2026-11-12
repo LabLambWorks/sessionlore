@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "artifacts": [
+    {
+      "id": "synthetic-commit-cache",
+      "kind": "commit",
+      "title": "Bound the product cache with a 600-entry LRU",
+      "text": "Synthetic commit diff:\n--- a/src/product-cache.ts\n+++ b/src/product-cache.ts\n@@\n-const cache = new Map();\n+const cache = new LruCache({ maxSize: 600 });\nThis fixture represents a local commit. It provides no deployment evidence.",
+      "timestamp": "2026-10-01T10:05:00Z",
+      "uri": null,
+      "paths": ["src/product-cache.ts"]
+    },
+    {
+      "id": "synthetic-test-cache",
+      "kind": "test",
+      "title": "Product cache verification after the 600-entry change",
+      "text": "Command: pnpm test product-cache. Exit code: 0. 14 tests passed, including 600-entry capacity and LRU eviction order. Tested the local 600-entry change. No production load test or deployment check.",
+      "timestamp": "2026-10-01T10:03:00Z",
+      "uri": null,
+      "paths": ["src/product-cache.ts", "test/product-cache.test.ts"]
+    },
+    {
+      "id": "synthetic-pr-docs",
+      "kind": "pr",
+      "title": "Correct webhook timeout documentation",
+      "text": "PR status: open. docs/webhooks.md changes the documented timeout from 3 seconds to 30 seconds. This changes documentation only. There is no evidence of a merge, runtime behavior change, or deployment.",
+      "timestamp": "2026-10-01T09:20:00Z",
+      "uri": null,
+      "paths": ["docs/webhooks.md"]
+    }
+  ]
+}

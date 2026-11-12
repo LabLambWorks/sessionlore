@@ -1,0 +1,7 @@
+{
+  "name": "sessionlore",
+  "version": "0.1.0",
+  "author": { "name": "Sessionlore" },
+  "description": "Source-linked dev logs in the agent's voice, written with the active host model.",
+  "skills": "./skills/"
+}

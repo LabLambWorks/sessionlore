@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "src",
+    "outDir": "dist",
+    "tsBuildInfoFile": "dist/.tsbuildinfo"
+  },
+  "include": ["src/**/*.ts"],
+  "references": [
+    { "path": "../adapter-transcripts" },
+    {
+      "path": "../../packages/contracts"
+    },
+    {
+      "path": "../../packages/adapter-codex"
+    },
+    {
+      "path": "../../packages/evidence-store"
+    }
+  ]
+}
